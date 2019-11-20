@@ -1,4 +1,15 @@
 @import "config";
+
+// Container
+.container {
+  max-width: $max-width;
+  margin: auto;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+  margin-top: 6rem;
+  overflow: hidden;
+}
+
 // Text
 .x-large {
   font-size: 4rem;
@@ -14,6 +25,10 @@
 .lead {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.text-primary {
+  color: $primary-color;
 }
 
 // Background
@@ -92,5 +107,59 @@
     &:hover {
       background: lighten($success-color, 10%);
     }
+  }
+}
+
+//Alert
+.alert {
+  padding: 0.8rem;
+  margin: 1.2rem;
+  color: $light-color;
+  background-color: $dark-color;
+
+  &.alert-danger {
+    @include set-background($danger-color);
+  }
+  &.alert-success {
+    @include set-background($success-color);
+  }
+  &.alert-primary {
+    @include set-background($primary-color);
+  }
+  &.alert-light {
+    @include set-background($light-color);
+  }
+}
+
+// Margin and Padding
+$spaces: (1, 2, 3, 4, 5);
+
+@each $space in $spaces {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  .my-#{$space} {
+    margin-top: #{$space}rem;
+    margin-bottom: #{$space}rem;
+  }
+
+  .mx-#{$space} {
+    margin-left: #{$space}rem;
+    margin-right: #{$space}rem;
+  }
+
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+
+  .py-#{$space} {
+    padding-top: #{$space}rem;
+    padding-bottom: #{$space}rem;
+  }
+
+  .px-#{$space} {
+    padding-left: #{$space}rem;
+    padding-right: #{$space}rem;
   }
 }
