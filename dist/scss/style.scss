@@ -70,3 +70,14 @@ ul {
     text-align: center;
   }
 }
+
+//profile 
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr ;
+  grid-gap: 2rem;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;;
+  line-height: 1.8;
+}

@@ -35,7 +35,7 @@
 
 .bg-light {
   background-color: #f4f4f4;
-  color: #fff;
+  color: #333;
 }
 
 .bg-dark {
@@ -45,7 +45,7 @@
 
 .bg-danger {
   background-color: #dc3545;
-  color: #fff;
+  color: #333;
 }
 
 .bg-success {
@@ -55,7 +55,7 @@
 
 .bg-white {
   background-color: #fff;
-  color: #fff;
+  color: #333;
 }
 
 .dark-overlay {
@@ -101,7 +101,7 @@
 
 .btn.btn-light {
   background-color: #f4f4f4;
-  color: #fff;
+  color: #333;
 }
 
 .btn.btn-light:hover {
@@ -110,7 +110,7 @@
 
 .btn.btn-danger {
   background-color: #dc3545;
-  color: #fff;
+  color: #333;
 }
 
 .btn.btn-danger:hover {
@@ -126,6 +126,10 @@
   background: #34ce57;
 }
 
+.round-img {
+  border-radius: 50%;
+}
+
 .alert {
   padding: 0.8rem;
   margin: 1.2rem;
@@ -135,7 +139,7 @@
 
 .alert.alert-danger {
   background-color: #dc3545;
-  color: #fff;
+  color: #333;
 }
 
 .alert.alert-success {
@@ -150,7 +154,7 @@
 
 .alert.alert-light {
   background-color: #f4f4f4;
-  color: #fff;
+  color: #333;
 }
 
 .m-1 {
@@ -399,5 +403,19 @@ ul {
   width: 80%;
   height: 100%;
   text-align: center;
+}
+
+.profile {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.8;
 }
 /*# sourceMappingURL=style.css.map */
